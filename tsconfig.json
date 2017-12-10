@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsxFactory": "Template.create",
+    "jsx": "react",
+
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "outDir": "dest",
+    "baseUrl": "src",
+    "allowJs": false,
+    "target": "es2017",
+    "strictNullChecks": true,
+    "lib": [ "es2017" ]
+  },
+  "exclude": [
+    "node_modules",
+    "dest"
+  ]
+}

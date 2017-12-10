@@ -1,0 +1,19 @@
+{
+  "name": "jsx-typescript-dsl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ike Ku <dempfi@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc; node dest/index.js"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.88",
+    "@types/node": "^8.0.57",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}

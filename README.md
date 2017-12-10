@@ -1,8 +1,10 @@
-## TypeScript JSX syntax as typed DSL
+<div align="center"><img src="https://i.imgur.com/5OScan3.png" width="950"/></div>
+
+### TypeScript JSX syntax as typed DSL
 
 This is an example repository for medium article.
 
-### Run
+#### Run
 To run the example:
 - Clone this repository;
 - Run `yarn` to install dependencies;

@@ -2,7 +2,7 @@
 
 ### TypeScript JSX syntax as typed DSL
 
-This is an example repository for medium article.
+This is an example repository for an article.
 
 #### Run
 To run the example:

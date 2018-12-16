@@ -9,6 +9,7 @@ const isElement = (e: any): e is Element<any> =>
 const is = <K extends Kinds>(k: K, e: string | Element<any>): e is Element<K> =>
   isElement(e) && e.kind === k
 
+/* Concat all direct child nodes that aren't Elements (strings) */
 const buildText = (e: Element<any>) =>
   e.children.filter(i => !isElement(i)).join('')
 
@@ -43,6 +44,10 @@ class Element<K extends Kinds> {
     this.children = flatten(children)
   }
 
+  /*
+   * Convert this Element to actual Slack message
+   * only if it is a higher level Element — <message/>.
+   */
   toMessage() {
     if (!is('message', this)) return {}
     const attachments = this.children.filter(i => is('attachment', i)).map(buildAttachment)
